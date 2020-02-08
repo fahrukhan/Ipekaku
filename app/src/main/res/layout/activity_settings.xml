@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settingLogoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:backgroundTint="@color/colorAccent"
+        app:strokeColor="@android:color/white"
+        app:rippleColor="@color/colorAccent"
+        app:cornerRadius="24dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="logout"/>
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_below="@+id/settingLogoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaa"/>
+
+</RelativeLayout>

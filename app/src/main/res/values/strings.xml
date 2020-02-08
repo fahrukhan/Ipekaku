@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ipekaku</string>
+    <string name="loading">Submitting</string>
+    <string name="update_text_caused_old_version">Anda menggunakan Ipekaku versi lama, ada beberapa update yang tidak memungkinakan untuk tetap menggunakan aplikasi ini, Silahkan install aplikasi versi terbaru agar dapat menggunakannya. Terima kasih untuk terus memberikan dukungan pada aplikasi ini.  Ipekaku team</string>
+</resources>

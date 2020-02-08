@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9877DF</color>
+    <color name="colorPrimaryDark">#825FCC</color>
+    <color name="bgDark">#5E4496</color>
+    <color name="colorAccent">#FEC345</color>
+    <color name="colorAccentDark">#A07E34</color>
+
+    <color name="toastWarning">#FFCA28</color>
+    <color name="toastError">#EF5350</color>
+    <color name="toastSuccess">#66BB6A</color>
+    <color name="cardBG">#B3412B4E</color>
+    <color name="cardBgAnnouncement">#E9E9E9</color>
+    <color name="bgMenuColor">#352041</color>
+</resources>

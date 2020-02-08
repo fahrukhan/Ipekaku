@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <RelativeLayout
+        android:id="@+id/loginRelLay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp"
+        android:layout_above="@+id/regRegisterBtn"
+        android:background="@drawable/bg_login">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mainLinLay">
+            <ImageView
+                android:id="@+id/mainCircle"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/shape_circle"
+                android:tint="#F7F7F7"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:src="@drawable/ic_announcement"
+                android:layout_alignTop="@+id/mainCircle"
+                android:layout_alignEnd="@+id/mainCircle"
+                android:layout_alignBottom="@+id/mainCircle"
+                android:layout_alignStart="@+id/mainCircle"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/mainLoginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/mainCircle"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="Announcement"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/mainLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="title"
+                app:endIconMode="clear_text"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/announcementTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="240"
+                app:counterTextColor="@android:color/white"
+                android:hint="announcement text"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/announcementMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:minLines="10"
+                    android:maxLength="240"
+                    android:inputType="textMultiLine"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/announcementPostButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:rippleColor="@color/colorAccent"
+        app:cornerRadius="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="SEND"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
