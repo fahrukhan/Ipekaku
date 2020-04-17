@@ -1,2 +1,2 @@
 # Ipekaku
-Dipersembahkan untuk teman-teman kuliah di UNIBI
+Dipersembahkan untuk teman-teman kuliah
